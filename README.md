@@ -10,6 +10,7 @@ now for php you have multiple options:
 1. apt install php -y
 2. sudo add-apt-repository ppa:ondrej/php
    sudo apt install php8.2
+   
 Use the second option if you want a specific version of php
 
 Now, how to set it up:
