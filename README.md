@@ -3,14 +3,15 @@ Panel for managing Apache Virtual Hosts.
 
 
 Before setting anything up you will be needing these packages:
-php, apache2
+php, apache2, certbot for apache
 FOR UBUNTU
 apt install apache2 -y
 now for php you have multiple options:
 1. apt install php -y
 2. sudo add-apt-repository ppa:ondrej/php
    sudo apt install php8.2
-   
+3. sudo apt install certbot python3-certbot-apache - this is certbot for apache, this will be used to generate SSL certificates for your website
+
 Use the second option if you want a specific version of php
 
 Now, how to set it up:
