@@ -31,6 +31,7 @@ sudo chgrp -R webadmins /var/www/html - Changing that the group has the ownershi
 
 
 sudo chown -R root:webadmins /var/www/html/ - Changing that the group has ownership of the /etc/apache2/sites-available
+
 sudo chmod 2775 /var/www/html
 
 sudo chmod -R 2775 /etc/apache2/sites-available
