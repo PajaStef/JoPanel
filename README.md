@@ -39,6 +39,21 @@ sudo chmod -R 2775 /etc/apache2/sites-available
 
 setting correct permissions.
 
-5. After that restart or start apache and you are ready to go!
+5. You **must** create an example apache2 config file so the panel can copy it and put in your info, heres what /etc/apache2/sites-available/template.conf should have:
+<VirtualHost *:80>
+    ServerName {{DOMAIN}}
+    DocumentRoot {{DOC_ROOT}}
+    ErrorLog ${APACHE_LOG_DIR}/{{DOMAIN}}_error.log
+    CustomLog ${APACHE_LOG_DIR}/{{DOMAIN}}_access.log combined
+
+    <Directory {{DOC_ROOT}}/>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+6. After that restart or start apache and you are ready to go!
 
 
