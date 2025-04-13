@@ -30,7 +30,7 @@ sudo usermod -aG webadmins www-data - Adding user www-data to the group. You can
 sudo chgrp -R webadmins /var/www/html - Changing that the group has the ownership of the /var/www/html folder
 
 
-sudo chown -R root:webadmins /var/www/html/ - Changing that the group has ownership of the /etc/apache2/sites-available
+sudo chown -R root:webadmins /etc/apache2/sites-available - Changing that the group has ownership of the /etc/apache2/sites-available
 
 sudo chmod 2775 /var/www/html
 
